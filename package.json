@@ -1,0 +1,57 @@
+{
+  "name": "adopt-me-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/App.tsx",
+  "scripts": {
+    "test": "jest --silent",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest -u",
+    "test:watch": "jest --watch",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "tslint --project .",
+    "dev": "parcel src/index.html"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!petfinder-client).+"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btholt/complete-intro-to-react-v4.git"
+  },
+  "author": "Khalid Ardah",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/reach__router": "^1.2.4",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "babel-core": "6.26.3",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "jest": "23.5.0",
+    "parcel-bundler": "1.11.0",
+    "prettier": "1.14.2",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@reach/router": "1.2.1",
+    "@types/node": "^12.0.2",
+    "@types/react-redux": "^7.0.9",
+    "emotion": "9.2.8",
+    "petfinder-client": "1.0.2",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-emotion": "9.2.8",
+    "react-redux": "5.0.7",
+    "react-test-renderer": "16.4.2",
+    "redux": "4.0.0",
+    "redux-thunk": "2.3.0"
+  }
+}
